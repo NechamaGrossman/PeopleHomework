@@ -1,0 +1,15 @@
+﻿<form method="post" action="/Home/SubmitPeople" style="margin-top:60px" id="form">
+    <button class='btn btn-primary'>Submit</button>
+    <br /> <br />
+    <input name='Person[0].FirstName' class='form-control' placeholder='First Name' />
+    <input name='Person[0].LastName' class='form-control' placeholder='Last Name' />
+    <input name='Person[0].Age' class='form-control' placeholder='Age' />
+
+
+</form>
+<br />
+<br />
+<button class="btn btn-primary" id="add-person">Add another Person</button>
+@section  Scripts{ 
+<script src="~/js/AddPerson.js"></script>
+}

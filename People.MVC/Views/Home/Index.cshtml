@@ -1,0 +1,23 @@
+﻿@using PeopleLibrary;
+@model List<Person>
+<br />
+<br />
+<a href="/Home/Addperson" class="btn btn-primary">Add Person</a>
+<br />
+<br />
+
+<table class="table table-bordered table-hover table-striped">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    @foreach (Person person in Model)
+    {
+        <tr>
+            <td>@person.FirstName</td>
+            <td>@person.LastName</td>
+            <td>@person.Age</td>
+        </tr>
+    }
+</table>  
